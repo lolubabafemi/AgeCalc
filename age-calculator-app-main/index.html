@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+  <main>
+    <section id="input_section">
+      <div>
+        <p>DAY</p>
+        <input type="text" name="" id="day_inputed" placeholder="DD" minlength="1" maxlength="2">
+        <em id="day_alert"></em>
+      </div>
+      <div>
+        <p>MONTH</p>
+        <input type="text" name="" id="month_inputed" placeholder="MM" minlength="1" maxlength="2">
+        <em id="month_alert"></em>
+      </div>
+      <div>
+        <p>YEAR</p>
+        <input type="text" name="" id="year_inputed" placeholder="YYYY" minlength="4" maxlength="4">
+        <em id="year_alert"></em>
+      </div>
+    </section>
+
+    <div id="arrow_section">
+      <div id="hr"></div>
+      <img src="assets/images/icon-arrow.svg" alt="" id="arrow_picture">
+    </div>
+
+    <button onclick="ageCalc()">Click click</button>
+
+    <section id="display">
+      <h2><span class="numbers" id="number_of_years">--</span> years</h2>
+      <h2><span class="numbers" id="number_of_months">--</span> months</h2>
+      <h2><span class="numbers" id="number_of_days">--</span> days</h2>
+    </section>
+
+  </main>
+
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
